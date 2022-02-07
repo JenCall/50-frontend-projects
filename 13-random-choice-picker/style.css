@@ -23,6 +23,10 @@ text-align: left;
 font-weight: bold;
 }
 
+p {
+    font-size: 14px;
+}
+
 .container {
 width: 500px;
 }
