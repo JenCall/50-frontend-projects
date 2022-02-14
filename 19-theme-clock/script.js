@@ -24,7 +24,7 @@ function setTime() {
     const time = new Date();
     const month = time.getMonth();
     const day = time.getDay();
-    const dateEl = time.getDate();
+    const date = time.getDate();
     const hours = time.getHours();
     const hoursForClock = hours % 12;
     const minutes = time.getMinutes();
