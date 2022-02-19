@@ -8,4 +8,6 @@ const date = document.getElementById('date');
 const animated_bgs = document.querySelectorAll('.animated-bg');
 const animated_bg_texts = document.getElementById('.animated-bg-text');
 
-
+function getData() {
+    header.innerHTML = ''
+}
