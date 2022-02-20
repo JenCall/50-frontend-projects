@@ -54,7 +54,11 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.nav.active a {
+.nav.active li {
+    color: #000;
+}
+
+.nav.active a{
     color: #000;
 }
 
@@ -62,7 +66,7 @@ body {
     padding: 10px 0;
 }
 
-.nav a.current, .nav a:hover {
+.nav a.current, .nav a:hover, .nav li:hover {
     color: #c0392b;
     font-weight: bold;
 }
