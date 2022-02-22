@@ -42,7 +42,7 @@ body {
     margin-top: -30px;
 }
 
-.right-slide {
+.right-side {
     height: 100%;
     position: absolute;
     top: 0;
@@ -50,7 +50,7 @@ body {
     width: 65%;
 }
 
-.right-slide > div {
+.right-side > div {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
