@@ -12,6 +12,10 @@ async function getUser(username) {
     }
 }
 
+function createUserCard(user) {
+    
+}
+
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
