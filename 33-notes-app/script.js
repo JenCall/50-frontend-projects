@@ -1,5 +1,7 @@
 const addBtn = document.getElementById('add')
 
+const notes = 
+
 addBtn.addEventListener('click', () => addNewNote())
 
 function addNewNote(text='') {
@@ -37,7 +39,19 @@ function addNewNote(text='') {
         const { value } = e.target
 
         main.innerHTML = marked(value)
+
+        function updateLS()
     })
 
     document.body.appendChild(note)
+}
+
+function updateLS() {
+    const notesText = document.querySelectorAll('textarea')
+
+    const notes = []
+
+    notesText.forEach(note => notes.push(note.value))
+
+    localStorage.setItem('notes', JSON.stringify(notes))
 }
