@@ -49,7 +49,7 @@ h4 {
     text-align: center;
 }
 
-.final .show {
+.final.show {
     transform: translate(-50%,-50%) scale(1);
     animation: show 0.2s ease-out;
 }    
