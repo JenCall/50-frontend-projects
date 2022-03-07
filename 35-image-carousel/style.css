@@ -32,13 +32,25 @@ img {
     transition: transform 0.5s ease-in-out;
 }
 
-buttons-container {
+.buttons-container {
     display: flex;
     justify-content: space-between;
+}
+
+.btn {
     background-color: rebeccapurple;
     color: #fff;
     border: none;
     padding: 0.5rem;
     cursor: pointer;
     width: 49.5%;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
 }
