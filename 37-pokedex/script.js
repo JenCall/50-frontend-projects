@@ -31,7 +31,13 @@ const getPokemon = async (id) => {
 }
 
 const createPokemonCard = (pokemon) => {
+    const pokemonEl = document.createElement('div')
+    pokemonEl.classList.add('pokemon')
+
+    const pokemonInnerHTML = `
     
+    
+    `
 }
 
 fetchPokemons()
