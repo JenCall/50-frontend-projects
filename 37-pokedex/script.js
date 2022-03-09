@@ -35,8 +35,14 @@ const createPokemonCard = (pokemon) => {
     pokemonEl.classList.add('pokemon')
 
     const pokemonInnerHTML = `
-    
-    
+    <div class="img-container">
+        <img src="https://images.unsplash.com/photo-1637158881671-f6e4331887e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+    </div>
+    <div class="info">
+        <span class="number">#001</span>
+        <h3 class="name">Bulbasar</h3>
+        <small class="type">Type: <span>grass</span> </small>
+    </div>
     `
 }
 
