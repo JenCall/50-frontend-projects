@@ -43,6 +43,8 @@ const createPokemonCard = (pokemon) => {
     const type = main_types.find(type => poke_types.indexOf(type) > -1)
     const color = colors[type]
 
+    pokemonEl.style.backgroundColor = color
+
     const pokemonInnerHTML = `
     <div class="img-container">
     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"" alt="${name}">
@@ -55,6 +57,7 @@ const createPokemonCard = (pokemon) => {
     `
 
     pokemonEl.innerHTML = pokemonInnerHTML
+
     poke_container.appendChild(pokemonEl)
 }
 
