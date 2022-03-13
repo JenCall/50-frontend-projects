@@ -48,11 +48,16 @@ body {
     height: 500px;
     width: 500px;
     position: relative;
+    transition: .4s ease;
 }
 
 .boxes.big {
     height: 600px;
     width: 600px;
+}
+
+.boxes.big .box {
+    transform: rotateZ(360deg);
 }
 
 .box {
@@ -63,4 +68,14 @@ body {
     height: 125px;
     width: 125px;
     transition: 0.4s ease;
+}
+
+.box::after {
+    content: '';
+    background-color: aquamarine;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
 }
