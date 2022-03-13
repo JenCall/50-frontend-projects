@@ -47,6 +47,7 @@ body {
     justify-content: space-around;
     height: 500px;
     width: 500px;
+    position: relative;
 }
 
 .boxes.big {
@@ -55,7 +56,11 @@ body {
 }
 
 .box {
-    background-color: #85C88A;
+    background-image: url('https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    position: relative;
     height: 125px;
     width: 125px;
+    transition: 0.4s ease;
 }
