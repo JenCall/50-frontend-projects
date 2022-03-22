@@ -14,4 +14,17 @@ function addTodo(todo) {
     if(todo) {
         todoText = todo.text
     }
+
+    if(todoText) {
+        const todoEl = document.createElement('li')
+        if(todo && todo.completed) {
+            todoEl.classList.add('completed')
+        }
+
+        todoEl.innerText = todoText
+
+        todosUl.appendChild(todoEl)
+
+        input.value = ''
+    }
 }
