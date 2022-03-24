@@ -63,3 +63,9 @@ function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
 
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if( answer == quizData[currentQuiz].correct) {
+        
+    }  
+})
