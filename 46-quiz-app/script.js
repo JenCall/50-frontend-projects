@@ -42,12 +42,14 @@ const c_text = document.getElementById('c_text');
 const d_text = document.getElementById('d_text');
 const submitBtn = document.getElementById('submit');
 
-let currentQuiz= 2
+let currentQuiz= 0
 let score = 0
 
 loadQuiz()
 
 function loadQuiz() {
+    deselectAnswers()
+
     const loadQuizData = quizData[currentQuiz]
 
     questionEl.innerText = loadQuizData.question
@@ -56,3 +58,8 @@ function loadQuiz() {
     c_text.innerText = loadQuizData.c
     d_text.innerText = loadQuizData.d
 }
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
