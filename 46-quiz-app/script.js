@@ -63,9 +63,32 @@ function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
 
+function getSelected() {
+    let answer;
+
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
-    if( answer == quizData[currentQuiz].correct) {
-        
+    if( answer === quizData[currentQuiz].correct) {
+        score++
     }  
+
+    currentQuiz++
+
+    if(currentQuiz < quizData.length) {
+        loadQuiz()
+    } else {
+        quiz.innerHTML = `
+        <h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
+        
+        <button onclick="location.reload()">Reload</button>
+        `
+    }
 })
