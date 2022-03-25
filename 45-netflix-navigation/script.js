@@ -6,6 +6,6 @@ openBtn.addEventListener('click', () => {
     navs.forEach(element => element.classList.add('visible'));
 })
 
-// closeBtn.addEventListener('click', () => {
-//     classList.add('visible')
-// })
+closeBtn.addEventListener('click', () => {
+    navs.forEach(element => element.classList.remove('visible'));
+})
