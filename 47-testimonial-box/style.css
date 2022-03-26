@@ -42,11 +42,42 @@ body {
     right: 40px;
 }
 
+.testimomial {
+    line-height: 28px;
+    text-align: justify;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user .user-image {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.user .user-details {
+    margin-left: 10px;
+}
+
+.user .username {
+    margin: 0;
+}
+
+.user .role {
+    font-weight: normal;
+    margin: 10px 0;
+}
+
 @media(max-width: 768px) {
     .testimonial-container {
         padding: 20px 30px;
     }
-    
+
     .fa-quote {
         display: none;
     }
