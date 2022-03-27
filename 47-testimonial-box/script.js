@@ -60,10 +60,13 @@ const testimonials = [
     },
   ]
 
-// uploadInfo()
+uploadInfo()
 
-// function uploadInfo() {
-//     const testimonialData = testimonials[idx];
+function uploadInfo() {
+    const testimonialData = testimonials[idx];
 
-//     testimonial.innerText = testimonialData.testimonial
-// }
+    testimonial.innerText = testimonialData.testimonial
+    userImage.innerText = testimonialData.photo
+    username.innerText = testimonialData.name
+    role.innerText = testimonialData.position
+}
