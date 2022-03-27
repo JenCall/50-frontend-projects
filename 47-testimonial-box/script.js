@@ -60,13 +60,19 @@ const testimonials = [
     },
   ]
 
-uploadInfo()
+  updateInfo()
 
-function uploadInfo() {
+function updateInfo() {
     const testimonialData = testimonials[idx];
 
-    testimonial.innerText = testimonialData.testimonial
+    testimonial.innerText = testimonialData.text
     userImage.innerText = testimonialData.photo
     username.innerText = testimonialData.name
     role.innerText = testimonialData.position
+
+    if(idx > testimonials.length - 1) {
+        idx = 0
+    } 
 }
+
+setInterval(updateTestimonial, 10000)
