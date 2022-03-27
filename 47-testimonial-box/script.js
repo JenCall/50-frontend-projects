@@ -58,21 +58,38 @@ const testimonials = [
       text:
         'This guy is a young and talented IT professional, proactive and responsible, with a strong work ethic. He is very strong in PSD2HTML conversions and HTML/CSS technology. He is a quick learner, eager to learn new technologies. He is focused and has the good dynamics to achieve due dates and outstanding results.',
     },
-  ]
+]
 
-  updateInfo()
-
+//My version of function
 function updateInfo() {
     const testimonialData = testimonials[idx];
 
     testimonial.innerText = testimonialData.text
-    userImage.innerText = testimonialData.photo
+    userImage.src = testimonialData.photo
     username.innerText = testimonialData.name
     role.innerText = testimonialData.position
+
+    idx++
 
     if(idx > testimonials.length - 1) {
         idx = 0
     } 
 }
 
-setInterval(updateTestimonial, 10000)
+setInterval(updateInfo, 10000)
+
+// in the suggestion
+// function updateTestimonial() {
+//     const { name, position, photo, text } = testimonials[idx]
+  
+//     testimonial.innerHTML = text
+//     userImage.src = photo
+//     username.innerHTML = name
+//     role.innerHTML = position
+  
+//     idx++
+  
+//     if (idx > testimonials.length - 1) {
+//       idx = 0
+//     }
+// }
