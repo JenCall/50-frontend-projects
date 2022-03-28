@@ -1,7 +1,11 @@
 const result = document.getElementById('result')
 const filter = document.getElementById('filter')
 const listItems = []
+
 uploadData()
+
+filter.addEventListener('input', (e) => filterData(e.target.value))
+
 async function uploadData() {
     // fetch API data
     const response = await fetch('https://randomuser.me/api?results=50');
