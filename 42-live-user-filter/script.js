@@ -8,7 +8,7 @@ async function uploadData() {
     const { results } = await response.json()
 
     // clear results first
-    results.innerHTML = ''
+    result.innerHTML = ''
 
     // create html with dinamic info
     results.forEach(user => {
