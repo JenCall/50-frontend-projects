@@ -45,7 +45,8 @@ body {
     margin: 10px 5px;
 }
 
-.rating:hover, .rating.active {
+.rating:hover, 
+.rating.active {
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -66,17 +67,25 @@ body {
 }
   
 
-button {
-    display: flex;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    width: 150px;
-    height: 60px;
-    border-radius: 5px;
+.btn {
+    background-color: #302d2d;
     color: #fff;
-    background-color: black;
-    align-items: center;
+    border-radius: 5px;
     border: none;
-    font-size: 14px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.fa-heart {
+    color: red;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
